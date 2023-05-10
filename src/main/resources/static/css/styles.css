@@ -1,0 +1,24 @@
+.default-text{
+    color:white;
+}
+.bg-custom{
+    background: rgb(11,0,203);
+    background: linear-gradient(90deg, rgba(11,0,203,1) 0%, rgba(42,42,241,1) 75%, rgba(123,103,255,1) 100%);
+}
+.bg-white{
+    background-color: white;
+}
+input[type="search"]:focus {
+    border-color: white;
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+  }
+.btn-custom{
+    color:white;
+    border: white;
+}
+.btn-custom:focus {
+    outline: none;
+  }
+.btn-custom:hover {
+    background-color: lightblue;
+}
