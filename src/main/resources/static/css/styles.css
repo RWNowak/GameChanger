@@ -16,9 +16,21 @@ input[type="search"]:focus {
     color:white;
     border: white;
 }
+.navbar-btn{
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 80%;
+    align-items: center;
+}
 .btn-custom:focus {
     outline: none;
   }
 .btn-custom:hover {
     background-color: lightblue;
+}
+.flex-container-right{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
 }
