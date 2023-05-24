@@ -1,9 +1,30 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+    margin:0;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
 .default-text{
     color:white;
 }
 .bg-custom{
-    background: rgb(11,0,203);
-    background: linear-gradient(90deg, rgba(11,0,203,1) 0%, rgba(42,42,241,1) 75%, rgba(123,103,255,1) 100%);
+    background: rgb(115,134,213);
+    background: linear-gradient(90deg, rgba(115,134,213,1) 0%, rgba(72,75,228,0.722654027431285) 100%);
 }
 .bg-white{
     background-color: white;
@@ -13,8 +34,10 @@ input[type="search"]:focus {
     box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
   }
 .btn-custom{
-    color:white;
+    color: white;
     border: white;
+    text-decoration: none;
+    transition: all 0.3s;
 }
 .navbar-btn{
     margin-left: 5px;
@@ -26,7 +49,8 @@ input[type="search"]:focus {
     outline: none;
   }
 .btn-custom:hover {
-    background-color: lightblue;
+    color: #7386D5;
+    background: #fff;
 }
 .flex-container-right{
     display:flex;
@@ -34,3 +58,11 @@ input[type="search"]:focus {
     align-items: center;
     margin-left: auto;
 }
+.brand-big{
+    font-size:xx-large !important;
+}
+#main-content {
+    height: calc(100vh - (2 * 56px)); /* Adjust the navbar height as per your requirement */
+    overflow: auto; /* Add scrollbars if the content exceeds the height */
+  }
+  
