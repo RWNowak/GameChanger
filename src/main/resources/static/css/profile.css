@@ -1,0 +1,37 @@
+
+.default-text{
+    color:white;
+}
+.bg-custom{
+    background: rgb(11,0,203);
+    background: linear-gradient(90deg, rgba(11,0,203,1) 0%, rgba(42,42,241,1) 75%, rgba(123,103,255,1) 100%);
+}
+.btn-custom:focus {
+    outline: none;
+  }
+.btn-custom:hover {
+    background-color: lightblue;
+}
+.flex-container-right{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+}
+
+/* profile.css main section */
+.wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border:1px solid black
+}
+.form-box{
+    margin: 10px;
+}
+input{
+    display: flex;
+    
+}
