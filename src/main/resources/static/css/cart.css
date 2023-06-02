@@ -1,0 +1,38 @@
+/* cart.css */
+
+  #empty-cart {
+    display: none;
+    text-align: center;
+    color: #888;
+  }
+  
+  #cart-items {
+    margin-top: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .cart-item .product-info {
+    flex: 1;
+  }
+  
+  .cart-item .product-name {
+    font-weight: bold;
+  }
+  
+  .cart-item .product-price {
+    color: #888;
+  }
+  
+  
