@@ -16,6 +16,27 @@ p {
     color: #999;
 }
 
+.list-unstyled.components {
+    text-align: left;
+    list-style-type: none;
+    margin-left: 20px;
+  }
+  
+  .list-unstyled.components li {
+    margin-bottom: 10px; 
+  }
+  
+  .list-unstyled.components label {
+    display: inline-block; 
+    font-size: 16px; 
+  }
+  
+  .list-unstyled.components input[type="checkbox"] {
+    transform: scale(1.5); 
+    margin-right: 5px;
+  }
+  
+
 a,
 a:hover,
 a:focus {
