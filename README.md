@@ -29,7 +29,7 @@ GameChanger uses a classic database integration structure; the data model is def
 The interface was designed with the help of the <a href="https://getbootstrap.com/">Bootstrap library</a>, while the commits were structured according to the <a href="https://www.conventionalcommits.org/en/v1.0.0/">Conventional Commits</a> method.
 
 ###### Project Structure
-
+```
 GameChanger
     ├───.mvn
     │   └───wrapper
@@ -50,7 +50,7 @@ GameChanger
         └───test-classes
             └───GCGroup
                 └───GameChanger
-
+```
 ###### Startup architecture
 To run GameChanger, you need to perform two main steps:
 
