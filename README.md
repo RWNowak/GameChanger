@@ -2,13 +2,13 @@
 
 A simplistic store interface for managing a database of video games.
 
-##### Copyright
-###### Authors
+### Copyright
+#### Authors
 Rafal Nowak, Mikołaj Orzoł, Jakub Gabryszewski
-###### License
+#### License
 MIT License
 
-##### Requirements specification
+### Requirements specification
 | Identifier | Name | Description | Priority | Category |
 | --------------|-------|------|-----------|-----------|
 | REQ-001 | Managing video games | The software should allow the user to add and remove video games from the cart. | High | Functionality |
@@ -18,8 +18,8 @@ MIT License
 | REQ-005 | Optimization | The software should run quickly and efficiently so that users can work efficiently with the application. | Medium | Performance |
 | REQ-006 | Interface Language | The software should have an interface in English. | Low | User interface | User interface | 
 
-##### Software architecture
-###### Development architecture
+### Software architecture
+#### Development architecture
 The GameChanger project is written in Java Spring Boot.
 
 The main functionality of the project is the ability pick from a handful of hard-coded video games and add them to the cart, which is integrated with the MySQL database. The option to remove said video games is also included in the project.
@@ -28,7 +28,7 @@ GameChanger uses a classic database integration structure; the data model is def
 
 The interface was designed with the help of the <a href="https://getbootstrap.com/">Bootstrap library</a>, while the commits were structured according to the <a href="https://www.conventionalcommits.org/en/v1.0.0/">Conventional Commits</a> method.
 
-###### Project Structure
+#### Project Structure
 ```
 GameChanger
     ├───.mvn
@@ -51,7 +51,7 @@ GameChanger
             └───GCGroup
                 └───GameChanger
 ```
-###### Startup architecture
+#### Startup architecture
 To run GameChanger, you need to perform two main steps:
 
 1. Set up the Java Spring Boot environment:
