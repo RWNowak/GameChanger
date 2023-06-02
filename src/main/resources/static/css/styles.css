@@ -4,7 +4,9 @@ body {
     background: #fafafa;
     margin:0;
 }
-
+.navbar.z{
+    z-index: 999;
+}
 p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
@@ -61,22 +63,24 @@ input[type="search"]:focus {
 .brand-big{
     font-size:xx-large !important;
 }
-.body-container{
+.body-container {
     width: 100%;
     height: 100vh;
-    overflow: hidden;        
-}
+  }
+  
 #main-content {
-    height: 100%;
     margin-top: 80px;
     float: right;
     width: calc(100% - 250px);
     overflow: auto;
     flex-grow: 1;
   }
-  .games{
+.games{
     position: absolute;
     width: 800px;
     height: 300px;
-  }
-  
+}
+.card.margin{
+    margin-top:20px;
+    margin-bottom:20px;
+}
