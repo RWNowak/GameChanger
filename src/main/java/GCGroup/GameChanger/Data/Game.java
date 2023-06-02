@@ -8,23 +8,24 @@ import jakarta.persistence.Table;
 @Table(name = "cart")
 public class Game {
     @Id
-    private int gameId;
+    private int game_id;
+
     private String title;
 
     public Game() {
     }
 
-    public Game(int gameId, String title) {
-        this.gameId = gameId;
+    public Game(int game_id, String title) {
+        this.game_id = game_id;
         this.title = title;
     }
 
     public int getGameId() {
-        return gameId;
+        return game_id;
     }
 
-    public void setGameId(int gameId) {
-        this.gameId = gameId;
+    public void setGameId(int game_id) {
+        this.game_id = game_id;
     }
 
     public String getTitle() {

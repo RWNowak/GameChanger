@@ -1,39 +1,28 @@
 package GCGroup.GameChanger.Data;
 
-import GCGroup.GameChanger.Data.Game;
-import GCGroup.GameChanger.Data.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.Optional;
 
 @Service
 public class CartService {
-    private final UserRepository userRepository;
+    private final GameRepository gameRepository;
 
-    @Autowired
-    public CartService(UserRepository userRepository) {
-        this.userRepository = userRepository;
+    public CartService(GameRepository gameRepository) {
+        this.gameRepository = gameRepository;
+    }
+
+    public boolean existsByGameId(int gameId) {
+        return gameRepository.existsById(gameId);
     }
 
     public boolean addToCart(Game game) {
-        // Check if the game already exists in the cart
-        Optional<Game> existingGame = userRepository.findById(game.getGameId());
-        if (existingGame.isPresent()) {
-            // Game already exists, return false
-            return false;
+        if (existsByGameId(game.getGameId())) {
+            return false;  // Game already in the cart
         }
-
-        // Add the game to the cart
-        userRepository.save(game);
-
-        // Game added successfully, return true
-        return true;
+        gameRepository.save(game);
+        return true;  // Game added successfully
     }
 
     public void removeFromCart(int gameId) {
-        // Remove the game from the cart by game ID
-        userRepository.deleteById(gameId);
+        gameRepository.deleteById(gameId);
     }
 }
-

@@ -36,7 +36,14 @@
         <h1>Shopping Cart</h1>
 
         <div id="cart-items">
-          <!-- Cart items will be dynamically added here -->
+          <table>
+            <tr>
+                <th>Title</th>
+            </tr>
+            <tr th:each="game : ${games}">
+                <td th:text="${game.title}"></td>
+            </tr>
+        </table>
         </div>
 
         <div id="empty-cart" class="mt-3">
