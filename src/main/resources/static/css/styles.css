@@ -89,3 +89,7 @@ input[type="search"]:focus {
     height: 400px; /* Set the desired height */
     object-fit: cover;
 }
+.hidden {
+    display: none;
+  }
+  

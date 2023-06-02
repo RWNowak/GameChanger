@@ -38,20 +38,17 @@
           </div>
 
           <ul class="list-unstyled components">
-            <div style="text-align:center;">
+            <div style="text-align:center; margin-right:15px;">
               <p>Find the right game for you</p>
             </div>
               <li class="active">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">Action</label>
+                <input type="checkbox" id="actionCheckbox" value="action" onchange="filterGames()"> Action<br>
               </li>
               <li>
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">Fighting</label>
+                <input type="checkbox" id="fightingCheckbox" value="fighting" onchange="filterGames()"> Fighting<br>
               </li>
               <li>
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">RPG</label>
+                <input type="checkbox" id="rpgCheckbox" value="rpg" onchange="filterGames()"> RPG<br>
               </li>
           </ul>
 
@@ -63,20 +60,20 @@
       </nav>
       <div id="main-content">
         <div class="container text-center">
-          <div class="row align-items-start">
-            <div class="col">
-              <div class="card margin" style="width: 18rem;">
+          <div class="row justify-content-between flex-wrap">
+            <div class="col-md-4">
+              <div class="card margin game" style="width: 18rem;" data-genre="rpg">
                 <img src="/images/covers/1.png" class="card-img-top custom-img" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Diablo IV</h5>
-                  <h6><strong>Genre:</strong> Action RPG</h6>
+                  <h6><strong>Genre:</strong> RPG</h6>
                   <p class="card-text">Embark on a dark and epic journey through a world plagued by demons in this highly anticipated action role-playing game.</p>
                   <a href="#" class="btn btn-primary">Add to Cart</a>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card margin" style="width: 18rem;">
+            <div class="col-md-4">
+              <div class="card margin game" style="width: 18rem;" data-genre="action">
                 <img src="/images/covers/2.jpg" class="card-img-top custom-img" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Dead Space</h5>
@@ -86,8 +83,8 @@
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card margin" style="width: 18rem;">
+            <div class="col-md-4">
+              <div class="card margin game" style="width: 18rem;" data-genre="action">
                 <img src="/images/covers/3.jpg" class="card-img-top custom-img" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Dredge</h5>
@@ -97,12 +94,8 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="container text-center">
-          <div class="row align-items-center">
-            <div class="col">
-              <div class="card" style="width: 18rem;">
+            <div class="col-md-4">
+              <div class="card margin game" style="width: 18rem;" data-genre="action">
                 <img src="/images/covers/4.jpg" class="card-img-top custom-img" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Resident Evil IV</h5>
@@ -112,56 +105,52 @@
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card" style="width: 18rem;">
+            <div class="col-md-4">
+              <div class="card margin game" style="width: 18rem;" data-genre="action">
                 <img src="/images/covers/5.jpg" class="card-img-top custom-img" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Returnal</h5>
                   <h6><strong>Genre:</strong> Action</h6>
-                  <p class="card-text"> Crash-land on an alien planet trapped in an endless time loop, and fight for your life against relentless otherworldly threats in this intense action game.</p>
+                  <p class="card-text">Crash-land on an alien planet trapped in an endless time loop, and fight for your life against relentless otherworldly threats in this intense action game.</p>
                   <a href="#" class="btn btn-primary">Add to Cart</a>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card" style="width: 18rem;">
+            <div class="col-md-4">
+              <div class="card margin game" style="width: 18rem;" data-genre="action">
                 <img src="/images/covers/6.jpg" class="card-img-top custom-img" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Jedi: Survivor</h5>
                   <h6><strong>Genre:</strong> Action</h6>
-                  <p class="card-text"> Crash-land on an alien planet trapped in an endless time loop, and fight for your life against relentless otherworldly threats in this intense action game.</p>
+                  <p class="card-text">Crash-land on an alien planet trapped in an endless time loop, and fight for your life against relentless otherworldly threats in this intense action game.</p>
                   <a href="#" class="btn btn-primary">Add to Cart</a>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="container text-center">
-          <div class="row align-items-end">
-            <div class="col">
-              <div class="card margin" style="width: 18rem;">
+            <div class="col-md-4">
+              <div class="card margin game" style="width: 18rem;" data-genre="fighting">
                 <img src="/images/covers/7.jpg" class="card-img-top custom-img" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Street Fighter</h5>
                   <h6><strong>Genre:</strong> Fighting</h6>
-                  <p class="card-text"> Crash-land on an alien planet trapped in an endless time loop, and fight for your life against relentless otherworldly threats in this intense action game.</p>
+                  <p class="card-text">Crash-land on an alien planet trapped in an endless time loop, and fight for your life against relentless otherworldly threats in this intense action game.</p>
                   <a href="#" class="btn btn-primary">Add to Cart</a>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card margin" style="width: 18rem;">
+            <div class="col-md-4">
+              <div class="card margin game" style="width: 18rem;" data-genre="rpg">
                 <img src="/images/covers/8.jpg" class="card-img-top custom-img" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">The Witcher 3</h5>
-                  <h6><strong>Genre:</strong> Action RPG</h6>
-                  <p class="card-text"> Crash-land on an alien planet trapped in an endless time loop, and fight for your life against relentless otherworldly threats in this intense action game.
+                  <h6><strong>Genre:</strong> RPG</h6>
+                  <p class="card-text">Crash-land on an alien planet trapped in an endless time loop, and fight for your life against relentless otherworldly threats in this intense action game.</p>
                   <a href="#" class="btn btn-primary">Add to Cart</a>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card margin" style="width: 18rem;">
+            <div class="col-md-4">
+              <div class="card margin game" style="width: 18rem;" data-genre="action">
                 <img src="/images/covers/9.jpg" class="card-img-top custom-img" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Stranded: Alien Dawn</h5>
