@@ -1,7 +1,12 @@
 package GCGroup.GameChanger.Controllers;
 
+import GCGroup.GameChanger.Data.GameRepository;
 import GCGroup.GameChanger.Data.Game;
 import GCGroup.GameChanger.Data.CartService;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,13 +17,17 @@ import org.springframework.stereotype.Controller;
 @RequestMapping("/cart")
 public class CartController {
     private final CartService cartService;
+    private final GameRepository gameRepository;
 
-    public CartController(CartService cartService) {
+    public CartController(CartService cartService, @Autowired GameRepository gameRepository) {
         this.cartService = cartService;
+        this.gameRepository = gameRepository;
     }
 
     @GetMapping
     public String showCart(Model model) {
+        List<Game> games = gameRepository.findAll(); // Fetch game titles from the database
+        model.addAttribute("games", games);
         return "cart";
     }
 
