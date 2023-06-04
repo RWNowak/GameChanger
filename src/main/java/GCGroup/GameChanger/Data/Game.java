@@ -8,9 +8,9 @@ import jakarta.persistence.Table;
 @Table(name = "cart")
 public class Game {
     @Id
-    private int game_id;
+    public int game_id;
 
-    private String title;
+    public String title;
 
     public Game() {
     }

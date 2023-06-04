@@ -83,6 +83,7 @@ input[type="search"]:focus {
 .card.margin{
     margin-top:20px;
     margin-bottom:20px;
+    box-shadow: 10px 5px 5px gray;
 }
 .custom-img {
     width: 100%;

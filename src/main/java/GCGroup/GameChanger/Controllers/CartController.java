@@ -43,7 +43,7 @@ public class CartController {
         }
     }
 
-    @DeleteMapping("/remove/{gameId}")
+    @DeleteMapping("/remove/{game_id}")
     public ResponseEntity<String> removeFromCart(@PathVariable int game_id) {
         // Remove the game from the cart
         cartService.removeFromCart(game_id);

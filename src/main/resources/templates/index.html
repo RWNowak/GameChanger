@@ -7,7 +7,7 @@
     <link href="css\styles.css" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar z bg-custom" style="position: fixed; margin-bottom: 0px; width:calc(84%); right: 0; top: 0;" data-bs-theme="dark">
+    <nav class="navbar z bg-custom" style="position: fixed; margin-bottom: 0px; width:calc(83.5%); right: 0; top: 0;" data-bs-theme="dark">
       <div class="container-fluid" style="margin-left: 5px; flex-wrap: wrap;">
         <div class="row">
           <ul class="nav justify-content-center">
@@ -26,7 +26,7 @@
           </div>
           <div class ="flex-container-right">
             <a href="/cart">
-              <img src="/images/basket.png" width="40px" height="40px" style="margin-left: 5px;" />
+              <img src="/images/basket.png" width="40px" height="40px" style="margin-right: 15px;" />
             </a>
             <button class="btn btn-primary navbar-btn btn-custom" onclick="window.location.href='/login'" type="submit">Login</button>
             <button class="btn btn-primary navbar-btn btn-custom" onclick="window.location.href='/profile'" type="submit">Profile</button>
@@ -180,12 +180,12 @@
         $(".btn-primary[id^='cart-']").click(function() {
           event.preventDefault();
           var buttonId = $(this).attr("id");
-          var gameId = buttonId.split("-")[1];
-          var gameTitle = $(this).closest(".game").find(".card-title").text().trim();
+          var game_id = buttonId.split("-")[1];
+          var title = $(this).closest(".game").find(".card-title").text().trim();
       
           var requestData = {
-            gameId: gameId,
-            title: gameTitle
+            gameId: game_id,
+            title: title
           };      
 
           $.ajax({

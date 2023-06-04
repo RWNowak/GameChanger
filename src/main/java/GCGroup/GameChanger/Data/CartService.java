@@ -10,8 +10,8 @@ public class CartService {
         this.gameRepository = gameRepository;
     }
 
-    public boolean existsByGameId(int gameId) {
-        return gameRepository.existsById(gameId);
+    public boolean existsByGameId(int game_id) {
+        return gameRepository.existsById(game_id);
     }
 
     public boolean addToCart(Game game) {
@@ -22,7 +22,7 @@ public class CartService {
         return true;  // Game added successfully
     }
 
-    public void removeFromCart(int gameId) {
-        gameRepository.deleteById(gameId);
+    public void removeFromCart(int game_id) {
+        gameRepository.deleteById(game_id);
     }
 }
