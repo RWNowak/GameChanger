@@ -13,5 +13,9 @@
       <input type="password" id="password" name="password"><br><br>
       <input type="submit" value="Submit">
     </form>
+    <p><a href="/register">Don't have an account? Sign up</a></p>
+    <div th:if="${error}" class="error-message">
+      <p th:text="${error}"></p>
+    </div>
   </body>
 </html>
