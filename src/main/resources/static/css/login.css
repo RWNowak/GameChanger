@@ -1,33 +1,22 @@
-.login-form {
-    max-width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  
-  input[type="text"],
-  input[type="password"] {
-    width: 30%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-  
-  input[type="submit"] {
-    padding: 10px 20px;
-    background-color: royalblue;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
+.card-body.login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(115,134,213,1) 0%, rgba(72,75,228,0.722654027431285) 100%);
+}
+.row.login{
+  justify-content: center;
+}
+.margin{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.center{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.bigger{
+  padding-top:10px;
+  padding-bottom:10px;
+}
