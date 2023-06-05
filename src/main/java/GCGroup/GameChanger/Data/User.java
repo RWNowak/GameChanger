@@ -11,11 +11,11 @@ public class User {
     @Id
     private int id;
 
-    public String username;
+    private String username;
 
-    public String email;
+    private String email;
 
-    public String password;
+    private String password;
 
     public int getId() {
         return id;

@@ -53,7 +53,7 @@
             success: function(response) {
               showToast('Login successful!');
               setTimeout(function() {
-                window.location.href = "/profile"; // Redirect to the profile page after 4 seconds
+                window.location.href = "/profile/" + username; // Redirect to the profile page after 4 seconds
               }, 750);
             },            
             error: function(xhr, status, error) {
