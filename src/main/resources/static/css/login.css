@@ -20,3 +20,7 @@
   padding-top:10px;
   padding-bottom:10px;
 }
+a[href="/register"] {
+  color: white;
+  font-size: 16px; 
+}
