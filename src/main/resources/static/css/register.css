@@ -1,0 +1,22 @@
+.card-body.register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(115,134,213,1) 0%, rgba(72,75,228,0.722654027431285) 100%);
+  }
+  .row.register{
+    justify-content: center;
+  }
+  .margin{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bigger{
+    padding-top:10px;
+    padding-bottom:10px;
+  }
