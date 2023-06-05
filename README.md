@@ -26,7 +26,7 @@ The main functionality of the project is the ability pick from a handful of hard
 
 GameChanger uses a classic database integration structure; the data model is defined in the Game.java file, which is then referenced by the CartController. However, the different modules are encapsulated inside of the CartService. Finally, the GameRepository is used to interact with the MySQL database.
 
-The database requests are handled using <a href="https://api.jquery.com/category/ajax/">AJAX and Jquery library</a>
+The database requests are handled using <a href="https://api.jquery.com/category/ajax/">AJAX and Jquery library</a>. GameChanger also supports a very limited login functionality, that was mostly created to showcase the developer's ability to retrieve data from the MySQL database. It might be expanded upon in the future.
 
 The interface was designed with the help of the <a href="https://getbootstrap.com/">Bootstrap library</a>, while the commits were structured according to the <a href="https://www.conventionalcommits.org/en/v1.0.0/">Conventional Commits</a> method.
 
@@ -79,6 +79,17 @@ id INT AUTO_INCREMENT PRIMARY KEY,
 game_id VARCHAR(50) NOT NULL,
 title VARCHAR(500) NOT NULL
 );
+```
+```
+CREATE TABLE users (
+id INT AUTO_INCREMENT PRIMARY KEY,
+username VARCHAR(50) NOT NULL,
+email VARCHAR(50) NOT NULL,
+password VARCHAR(50) NOT NULL);
+
+INSERT INTO users (username, email, password)
+VALUES ('admin', 'admin@gmail.com', 'admin123');
+
 ```
 Modify the database access information, especially the password and database name, in the src>main>resources>application.properties file
 ```
