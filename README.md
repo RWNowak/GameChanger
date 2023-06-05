@@ -56,6 +56,8 @@ GameChanger
 
 #### You can find the project mock-up <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwhimsical.com%2Fgamechanger-ui-FoYKevN8XSpe8tYvdgjnjH%3Ffbclid%3DIwAR2Hw0f-4GPXfdaMFLV6b0l5ufrWSzl3QH2wc-5YalVib7HfoVJQ0qFtTPY&h=AT3gDKXSzl3u6ZOTOMOc2pI1gFc7Ho9S5adG4rlZ2dOGDi2vI4PAhw5OmG8pU5Agm3Be2v-oaSBqnn96CdFy0ev3GdRB_jJ4h7ZBp6tm33djeobe4NCqw0dfO6gD45jRKpgCTg">here</a>
 
+#### You can find the project on Trello <a href="https://trello.com/invite/b/YYCHaDDR/ATTI619fa31c7738df3a71f29b2d3fd6a18179740EFE/gamechanger">here</a>
+
 #### Startup architecture
 To run GameChanger, you need to perform two main steps:
 
